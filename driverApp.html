@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="index.js" defer></script>
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <h2>Driver App</h2>
+  <!-- //<p>Click on the buttons inside the tabbed menu:</p> -->
+  
+  <div class="tab">
+    <button class="tablinks" onclick="openTabs(event, 'Waiting',1)">Waiting Jobs</button>
+    <button class="tablinks" onclick="openTabs(event, 'Pending',2)">Processing Jobs</button>
+    <button class="tablinks" onclick="openTabs(event, 'Completed',3)">Completed Jobs</button>
+  </div>
+
+<div id="Waiting" class="tabcontent">
+  <div style="float:right">
+    <i class="fa fa-refresh" style="font-size:24px" onclick="getOpenTab1()"></i>
+  </div>
+  <table id="firstTab" class="table"> 
+  </table>
+</div>
+<div id="Pending" class="tabcontent">
+  <div style="float:right">
+    <i class="fa fa-refresh" style="font-size:24px" onclick="getOpenTab2()"></i>
+  </div>  
+  <table id="secondTab" class="table">
+  </table>
+
+</div>
+
+<div id="Completed" class="tabcontent">
+  <div style="float:right">
+    <i class="fa fa-refresh" style="font-size:24px" onclick="getOpenTab3()"></i>
+  </div>
+  <table id="thirdTab" class="table">
+  </table>
+
+
+</div>   
+</body>
+</html> 
